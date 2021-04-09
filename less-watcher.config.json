@@ -1,0 +1,6 @@
+{
+    "watchFolder": "src/less/",
+    "outputFolder": "src/dist/",
+    "runOnce": false,
+    "enableJs": true
+}

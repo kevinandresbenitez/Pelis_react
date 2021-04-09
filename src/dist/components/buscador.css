@@ -1,0 +1,26 @@
+.cont_buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont_buscador div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.cont_buscador div input {
+  width: 90vw;
+  padding: 5px;
+  outline: groove 0.3px;
+  max-width: 400px;
+}
+.cont_buscador div h1 {
+  color: honeydew;
+}
+.cont_buscador div button {
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: hsla(84, 100%, 59%, 0.89);
+  border: 1px solid hsl(84, 53%, 59%);
+}

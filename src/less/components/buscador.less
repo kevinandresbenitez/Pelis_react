@@ -1,0 +1,45 @@
+.cont_buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+
+
+        input{
+            width: 90vw;
+            padding: 5px;
+
+            outline:groove 0.3px;
+            max-width: 400px;
+        }
+
+        h1{
+            color: honeydew;
+        }
+
+
+        button{
+            padding: 7px 20px;
+            margin: 5px;
+            transition-property: color background rotate;
+
+            background-color: hsla(84, 100%, 59%, 0.89) ;
+            border: none;
+            transition-duration: 0.3s;
+
+            &:hover{
+                color: white;
+                background-color: rgba(241, 16, 16, 0.774);
+            }
+
+            &:active{
+                transform: rotate(10deg);
+            }
+        }
+    }
+}
