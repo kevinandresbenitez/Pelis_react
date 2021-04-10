@@ -31,7 +31,7 @@ class Productos extends Component {
         modal.style.animation='mostrar_modal 0.4s';
         modal.style.display = "inline-flex";
 
-        var detalles_product = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=95ad37d6`)
+        var detalles_product = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=95ad37d6`)
             .then((res)=>{
                 return res.json()
             })
@@ -49,7 +49,6 @@ class Productos extends Component {
 
 
     render() { 
-        console.log(this.state.modal)
         return (
 
 

@@ -22,7 +22,7 @@ class App extends Component{
         async componentDidMount(){
 
                 this.busqueda="batman"
-                var res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=95ad37d6&s=${this.busqueda}&page=1`)
+                var res = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=95ad37d6&s=${this.busqueda}&page=1`)
                 .then((obj)=>{
                         return obj.json()
                 }).catch(()=>{
@@ -37,7 +37,7 @@ class App extends Component{
 
         Buscar_peliculas=async(busqueda)=>{
                 this.busqueda=busqueda;
-                var res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=95ad37d6&s=${this.busqueda}&page=1`)
+                var res = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=95ad37d6&s=${this.busqueda}&page=1`)
                 .then((obj)=>{
                         return obj.json()
                 }).catch(()=>{
@@ -68,7 +68,7 @@ class App extends Component{
         shouldComponentUpdate=async(nextProps, nextState)=>{
 
                 if(this.state.pagina !== nextState.pagina && nextState.pagina > 0){
-                        var res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=95ad37d6&s=${this.busqueda}&page=${nextState.pagina}`)
+                        var res = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=95ad37d6&s=${this.busqueda}&page=${nextState.pagina}`)
                         .then((obj)=>{
                                 return obj.json()
                         }).catch(()=>{
