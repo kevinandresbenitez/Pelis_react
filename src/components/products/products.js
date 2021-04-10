@@ -49,6 +49,7 @@ class Productos extends Component {
 
 
     render() { 
+        console.log(this.state.modal)
         return (
 
 
@@ -87,11 +88,19 @@ class Productos extends Component {
                         {!this.state.modal ? null :                        
                             <div>
                                 <div>
-                                    <h1>"hola"</h1>
+                                    <h1>{this.state.modal.Title}</h1>
                                 </div>
 
-                                <div>                                    
-                                    <p><strong>Detalles:</strong>"hola"</p>
+                                <div>     
+                                    <p><strong>Tipo:</strong>{this.state.modal.Type}</p>
+                                    <p><strong>Fecha:</strong>{this.state.modal.Year}</p>
+                                    <p><strong>Pais:</strong>{this.state.modal.Country}</p>
+                                    <p><strong>Genero:</strong>{this.state.modal.Genre}</p>
+                                    <p><strong>Lenguaje:</strong>{this.state.modal.Language}</p>
+                                    <p><strong>Director:</strong>{this.state.modal.Director}</p>
+                                    <p><strong>Actores:</strong>{this.state.modal.Actors}</p>
+                                    <p><strong>Produccion:</strong>{this.state.modal.Production}</p>
+                                    <p><strong>Sinopsis:</strong>{this.state.modal.Plot}</p>
                                 </div>
 
                             </div>                                            

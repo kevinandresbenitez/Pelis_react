@@ -19,8 +19,17 @@
   color: honeydew;
 }
 .cont_buscador div button {
-  padding: 5px 20px;
+  padding: 7px 20px;
   margin: 5px;
+  transition-property: color background rotate;
   background-color: hsla(84, 100%, 59%, 0.89);
-  border: 1px solid hsl(84, 53%, 59%);
+  border: none;
+  transition-duration: 0.3s;
+}
+.cont_buscador div button:hover {
+  color: white;
+  background-color: rgba(241, 16, 16, 0.774);
+}
+.cont_buscador div button:active {
+  transform: rotate(10deg);
 }
