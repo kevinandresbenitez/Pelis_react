@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ImagenNoEncontrada from '../../dist/img/imagenNotFound.jpg';
 
 
 class Productos extends Component {
@@ -24,6 +25,9 @@ class Productos extends Component {
 
     async detalles_product(id){
         var modal =document.getElementById("modal_products");
+        var cargando_modal=document.getElementById("cargando_modal");
+
+
         var overlay=document.getElementsByClassName("overlay");
         overlay[0].style.display='block'
 
@@ -31,19 +35,22 @@ class Productos extends Component {
         modal.style.animation='mostrar_modal 0.4s';
         modal.style.display = "inline-flex";
 
+        if(!this.state.modal || id !== this.state.modal.imdbID){
+            cargando_modal.style.display ='inline-flex'
+        }
+
         var detalles_product = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=95ad37d6`)
             .then((res)=>{
                 return res.json()
             })
             .catch(()=>{
-                console.log("Erro al mostrar los detalles de la pelicula")
-            })
-
-
-
+                console.log("Error al mostrar los detalles de la pelicula")
+        })
             
 
         this.setState({modal:detalles_product});
+        cargando_modal.style.display ='none'
+
     }
 
 
@@ -58,7 +65,7 @@ class Productos extends Component {
                 return(
                         <button className='items_products' key={ind} onClick={()=>{this.detalles_product(obj.imdbID)}}>
                             <div>
-                            <img src={obj.Poster} alt={"Imagen"+ind} ></img>
+                            <img src={obj.Poster && obj.Poster !== "N/A" ? obj.Poster:ImagenNoEncontrada} alt={"Imagen"+ind} ></img>
 
                             </div>
 
@@ -79,8 +86,12 @@ class Productos extends Component {
 
 
                 <div  className='modal_products' id='modal_products'>
+                    <div id='cargando_modal'>
+                        <span></span>
+                    </div>
+
                     <div>
-                        <img src={this.state.modal  ? this.state.modal.Poster:null} alt='Poster'></img>                    
+                        <img src={this.state.modal && this.state.modal.Poster !== "N/A" ? this.state.modal.Poster: ImagenNoEncontrada} alt='Poster'></img>                    
                     </div>
 
                     <div>
