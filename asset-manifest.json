@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Pelis_react/static/css/main.75fad7db.chunk.css",
-    "main.js": "/Pelis_react/static/js/main.9aba2246.chunk.js",
-    "main.js.map": "/Pelis_react/static/js/main.9aba2246.chunk.js.map",
+    "main.css": "/Pelis_react/static/css/main.6d186a4e.chunk.css",
+    "main.js": "/Pelis_react/static/js/main.7d48f1a2.chunk.js",
+    "main.js.map": "/Pelis_react/static/js/main.7d48f1a2.chunk.js.map",
     "runtime-main.js": "/Pelis_react/static/js/runtime-main.0f8df3ed.js",
     "runtime-main.js.map": "/Pelis_react/static/js/runtime-main.0f8df3ed.js.map",
     "static/js/2.f6bedbea.chunk.js": "/Pelis_react/static/js/2.f6bedbea.chunk.js",
@@ -10,13 +10,14 @@
     "static/js/3.d39cbccb.chunk.js": "/Pelis_react/static/js/3.d39cbccb.chunk.js",
     "static/js/3.d39cbccb.chunk.js.map": "/Pelis_react/static/js/3.d39cbccb.chunk.js.map",
     "index.html": "/Pelis_react/index.html",
-    "static/css/main.75fad7db.chunk.css.map": "/Pelis_react/static/css/main.75fad7db.chunk.css.map",
-    "static/js/2.f6bedbea.chunk.js.LICENSE.txt": "/Pelis_react/static/js/2.f6bedbea.chunk.js.LICENSE.txt"
+    "static/css/main.6d186a4e.chunk.css.map": "/Pelis_react/static/css/main.6d186a4e.chunk.css.map",
+    "static/js/2.f6bedbea.chunk.js.LICENSE.txt": "/Pelis_react/static/js/2.f6bedbea.chunk.js.LICENSE.txt",
+    "static/media/imagenNotFound.a0276803.jpg": "/Pelis_react/static/media/imagenNotFound.a0276803.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0f8df3ed.js",
     "static/js/2.f6bedbea.chunk.js",
-    "static/css/main.75fad7db.chunk.css",
-    "static/js/main.9aba2246.chunk.js"
+    "static/css/main.6d186a4e.chunk.css",
+    "static/js/main.7d48f1a2.chunk.js"
   ]
 }
